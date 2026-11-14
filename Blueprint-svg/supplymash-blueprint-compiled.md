@@ -198,7 +198,7 @@ _Supplier lifecycle. A supplier cannot jump straight from "pending" to "active".
 ### 2.1 Journey 1 — Supplier registration & verification
 
 <p align="center">
-<img src="./supplymash-blueprint-compiled-7.svg" alt="diagram" height="1200">
+<img src="./supplymash-blueprint-compiled-7.svg" alt="diagram" height="1500">
 </p>
 
 <!-- ### 2.1 Journey 1 — Supplier registration & verification
@@ -207,7 +207,10 @@ _Supplier lifecycle. A supplier cannot jump straight from "pending" to "active".
 
 ### 2.2 Journey 2 — Purchase request & multi-level approval
 
-![diagram](./supplymash-blueprint-compiled-8.svg)
+<!-- ![diagram](./supplymash-blueprint-compiled-8.svg) -->
+<p align="center">
+<img src="./supplymash-blueprint-compiled-8.svg" alt="diagram" height="1500">
+</p>
 
 ### 2.3 Journey 3 — Purchase order → invoice → payment
 
@@ -244,7 +247,10 @@ The database has **22 tables in 6 groups**. Arrows mean "points to / is needed b
 
 #### ER 2 — Suppliers
 
-![diagram](./supplymash-blueprint-compiled-12.svg)
+<!-- ![diagram](./supplymash-blueprint-compiled-12.svg) -->
+<p align="center">
+<img src="./supplymash-blueprint-compiled-12.svg" alt="diagram" height="1000">
+</p>
 
 **In plain words:** a supplier has uploaded documents (checked before activation) and a performance record per period (calculated nightly).
 
@@ -261,7 +267,10 @@ The database has **22 tables in 6 groups**. Arrows mean "points to / is needed b
 
 #### ER 4 — Orders, invoices & payments (the money chain)
 
-![diagram](./supplymash-blueprint-compiled-14.svg)
+<!-- ![diagram](./supplymash-blueprint-compiled-14.svg) -->
+<p align="center">
+<img src="./supplymash-blueprint-compiled-14.svg" alt="diagram" height="1000">
+</p>
 
 **In plain words:** one request becomes (at most) one PO. One PO can have many invoices (suppliers often bill in parts). One invoice can have many payments (partial payments).
 
