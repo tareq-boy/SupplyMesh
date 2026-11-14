@@ -4,7 +4,7 @@
 
 ---
 
-## 📖 Start Here (60-second summary)
+## 📖 Introduction
 
 **The problem.** Companies buy from hundreds of suppliers using spreadsheets and email. Nobody can see what is happening, rules aren't enforced, and there is no history of who approved what.
 
@@ -1646,4 +1646,3 @@ Cookie: access_token=...
 
 ---
 
-_End of SupplyMesh technical blueprint._
