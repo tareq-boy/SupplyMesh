@@ -46,7 +46,7 @@ Every step in that chain is:
 | 🟨 Yellow | A decision or check                   |
 | ⬜ Grey   | System / automatic action             |
 
-### Where to find each assessment deliverable
+### Where to find each deliverable
 
 | #   | Deliverable                          | Section                                     |
 | --- | ------------------------------------ | ------------------------------------------- |
@@ -141,21 +141,17 @@ Every step in that chain is:
 
 ### 1.4 Lifecycles (status flows)
 
+_Purchase Request lifecycle._
 ![diagram](./supplymash-blueprint-compiled-2.svg)
 
-_Purchase Request lifecycle._
-
+_Purchase Order lifecycle._
 ![diagram](./supplymash-blueprint-compiled-3.svg)
 
-_Purchase Order lifecycle._
-
+_Invoice lifecycle._
 ![diagram](./supplymash-blueprint-compiled-4.svg)
 
-_Invoice lifecycle._
-
-![diagram](./supplymash-blueprint-compiled-5.svg)
-
 _Supplier lifecycle. A supplier cannot jump straight from "pending" to "active"._
+![diagram](./supplymash-blueprint-compiled-5.svg)
 
 ### 1.5 Feature dependencies
 
@@ -201,7 +197,13 @@ _Supplier lifecycle. A supplier cannot jump straight from "pending" to "active".
 
 ### 2.1 Journey 1 — Supplier registration & verification
 
-![diagram](./supplymash-blueprint-compiled-7.svg)
+<p align="center">
+<img src="./supplymash-blueprint-compiled-7.svg" alt="diagram" height="1200">
+</p>
+
+<!-- ### 2.1 Journey 1 — Supplier registration & verification
+
+![diagram](./supplymash-blueprint-compiled-7.svg) -->
 
 ### 2.2 Journey 2 — Purchase request & multi-level approval
 
@@ -755,7 +757,10 @@ The row is locked and incremented inside the same transaction that inserts the d
 
 ### 3.8 Multi-tenant isolation (3 layers of defence)
 
-![diagram](./supplymash-blueprint-compiled-16.svg)
+<!-- ![diagram](./supplymash-blueprint-compiled-16.svg) -->
+<p align="center">
+  <img src="./supplymash-blueprint-compiled-16.svg" alt="diagram" height="1000">
+</p>
 
 Layer 3 in code — each transaction starts by telling the database which company it is working for:
 
@@ -835,7 +840,10 @@ The app connects with a normal (non-superuser, non-`BYPASSRLS`) database role, s
 
 ### 4.4 Backend architecture (Clean Architecture per module)
 
-![diagram](./supplymash-blueprint-compiled-18.svg)
+<!-- ![diagram](./supplymash-blueprint-compiled-18.svg) -->
+<p align="center">
+  <img src="./supplymash-blueprint-compiled-18.svg" alt="diagram" height="800">
+</p>
 
 ```
 modules/suppliers/
