@@ -55,11 +55,13 @@ Every step in that chain is:
 | 3   | Complete ER Diagram                  | [§3.2](#32-er-diagrams-one-per-area)        |
 | 4   | Database Schema Documentation        | [§3.3 – §3.9](#33-table-reference)          |
 | 5   | High-Level Architecture Diagram      | [§4.2](#42-the-big-picture-diagram)         |
-| 6   | System Design Diagrams (4 workflows) | [§5](#5-critical-workflows)                 |
+| 6   | System Design Diagrams (4 workflows) | [§5](#5-system-design-diagrams)             |
 | 7   | API Structure Proposal               | [§6](#6-api-structure)                      |
 | 8   | Technical Decision Records (ADRs)    | [§7](#7-architecture-decision-records-adrs) |
 | 9   | MVP vs Future Scope                  | [§8](#8-mvp-vs-future-scope)                |
 | 10  | Risk and Scalability Analysis        | [§9](#9-risk-and-scalability-analysis)      |
+
+5. Critical Workflows - System Design Diagrams
 
 ---
 
@@ -970,10 +972,12 @@ modules/suppliers/
 
 ---
 
-## 5. Critical Workflows (System Design Diagrams)
+## 5. System Design Diagrams
 
 > Each workflow has: **a diagram → the story in plain words → rules → what can go wrong**.
 > In sequence diagrams, read top to bottom; solid arrows are requests, dashed arrows are replies.
+
+#### --------------- Critical Workflows ------------------------------------
 
 ### 5.1 Workflow A — Supplier registration & verification
 
